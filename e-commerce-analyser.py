@@ -92,5 +92,5 @@ result_df = monthly_category_orders_df.join(sales_target_df,\
                                             (monthly_category_orders_df["Category"] == sales_target_df["Category"])\
                                             &(monthly_category_orders_df["Order Month"] == sales_target_df["Month of Order Date"])\
                                             &(monthly_category_orders_df["Total Amount"] >= sales_target_df["Target"]))\
-                                     .drop("Month of Order Date", "Category")
-result_df.show()
+                                     .drop("Month of Order Date").drop(sales_target_df["Category"])
+result_df.show(n=100)
