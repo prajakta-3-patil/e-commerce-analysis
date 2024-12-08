@@ -7,10 +7,10 @@ This project is about exploring and analysing E-commerce data. This primarily in
 1. Orders:
    columns - Order ID, Order Date, CustomerName, State,City
    count - 500
-2. Order Details:
+3. Order Details:
    columns - Order ID, Amount, Profit, Quantity, Category, Sub-Category
    count - 1500
-3. Sales Target:
+4. Sales Target:
    columns - Month of Order Date, Category, Target
    count - 36
 
@@ -40,6 +40,7 @@ Result:
 
 #Task 2: Identify most frequent customer - Assumption (CustomerName, State, City) uniquely identifies a customer
 Result:
+
 +------------+--------------+------+----------------+----+
 |CustomerName|         State|  City|Number of Orders|rank|
 +------------+--------------+------+----------------+----+
@@ -48,83 +49,15 @@ Result:
 
 #Task 3: State wise % share in orders
 Result:
-+-----------------+-----------+
-|            State|Order Share|
-+-----------------+-----------+
-|   Madhya Pradesh|       20.2|
-|      Maharashtra|       18.0|
-|        Rajasthan|        6.4|
-|          Gujarat|        5.4|
-|           Punjab|        5.0|
-|            Delhi|        4.4|
-|      West Bengal|        4.4|
-|    Uttar Pradesh|        4.4|
-|        Karnataka|        4.2|
-|          Kerala |        3.2|
-|            Bihar|        3.2|
-|         Nagaland|        3.0|
-|   Andhra Pradesh|        3.0|
-| Himachal Pradesh|        2.8|
-|Jammu and Kashmir|        2.8|
-|          Haryana|        2.8|
-|              Goa|        2.8|
-|           Sikkim|        2.4|
-|       Tamil Nadu|        1.6|
-+-----------------+-----------+
+![image](https://github.com/user-attachments/assets/5d536650-eac5-404e-a4ea-11a239b48bfb)
+
 
 #Task 4: List all the order details of most frequent customer
 Result:
-+--------+----------+------------+--------------+------+-------+------+--------+-----------+------------+
-|Order ID|Order Date|CustomerName|         State|  City| Amount|Profit|Quantity|   Category|Sub-Category|
-+--------+----------+------------+--------------+------+-------+------+--------+-----------+------------+
-| B-25685|2018-06-10|     Sheetal|Madhya Pradesh|Indore|  51.00|  7.00|       2|  Furniture| Furnishings|
-| B-25685|2018-06-10|     Sheetal|Madhya Pradesh|Indore| 529.00|137.00|       3|Electronics|      Phones|
-| B-25685|2018-06-10|     Sheetal|Madhya Pradesh|Indore| 264.00|-30.00|       3|  Furniture| Furnishings|
-| B-25685|2018-06-10|     Sheetal|Madhya Pradesh|Indore|  45.00| -2.00|       4|   Clothing|       Shirt|
-| B-25724|2018-07-19|     Sheetal|Madhya Pradesh|Indore| 168.00|-51.00|       2|  Furniture|   Bookcases|
-| B-25827|2018-10-23|     Sheetal|Madhya Pradesh|Indore| 156.00| 21.00|       3|  Furniture|      Chairs|
-| B-25842|2018-11-02|     Sheetal|Madhya Pradesh|Indore|1543.00|370.00|       8|Electronics|    Printers|
-+--------+----------+------------+--------------+------+-------+------+--------+-----------+------------+
+![image](https://github.com/user-attachments/assets/2eb40d1d-00f4-4710-b5d7-65ce3925be78)
+
 
 #Task 5: Find Categories that met monthly sales target
 Result:
-+-----------+-----------+------------+--------+
-|   Category|Order Month|Total Amount|  Target|
-+-----------+-----------+------------+--------+
-|   Clothing|     Jul-18|   4310674.0|14000.00|
-|   Clothing|     Aug-18|   4310674.0|14000.00|
-|   Clothing|     Sep-18|   4171620.0|14000.00|
-|   Clothing|     Jan-19|   8482294.0|16000.00|
-|Electronics|     Nov-18|   7602282.0| 9000.00|
-|   Clothing|     Nov-18|   6396484.0|16000.00|
-|Electronics|     Dec-18|   6775947.0| 9000.00|
-|  Furniture|     Dec-18|   5214421.0|11400.00|
-|   Clothing|     Jun-18|   4171620.0|12000.00|
-|Electronics|     Apr-18|   7271748.0| 9000.00|
-|   Clothing|     Oct-18|   5979322.0|16000.00|
-|   Clothing|     Feb-19|   7508916.0|16000.00|
-|Electronics|     Sep-18|   4958010.0| 9000.00|
-|  Furniture|     Apr-18|   5595964.0|10400.00|
-|   Clothing|     Dec-18|   5701214.0|16000.00|
-|Electronics|     Jul-18|   5123277.0| 9000.00|
-|  Furniture|     Feb-19|   6867774.0|11600.00|
-|  Furniture|     May-18|   3942611.0|10500.00|
-|   Clothing|     Mar-19|   8065132.0|16000.00|
-|   Clothing|     Apr-18|   6118376.0|12000.00|
-|  Furniture|     Jun-18|   3815430.0|10600.00|
-|Electronics|     Aug-18|   5123277.0| 9000.00|
-|  Furniture|     Aug-18|   3942611.0|10900.00|
-|  Furniture|     Mar-19|   7376498.0|11800.00|
-|  Furniture|     Nov-18|   5850326.0|11300.00|
-|  Furniture|     Oct-18|   5468783.0|11100.00|
-|Electronics|     Jun-18|   4958010.0| 9000.00|
-|Electronics|     May-18|   5123277.0| 9000.00|
-|Electronics|     Jan-19| 1.0081287E7|16000.00|
-|  Furniture|     Sep-18|   3815430.0|11000.00|
-|  Furniture|     Jul-18|   3942611.0|10800.00|
-|Electronics|     Mar-19|   9585486.0|16000.00|
-|  Furniture|     Jan-19|   7758041.0|11500.00|
-|Electronics|     Feb-19|   8924418.0|16000.00|
-|   Clothing|     May-18|   4310674.0|12000.00|
-|Electronics|     Oct-18|   7106481.0| 9000.00|
-+-----------+-----------+------------+--------+
+![image](https://github.com/user-attachments/assets/69224779-111e-44b9-b0a9-fb02da0f9639)
+
